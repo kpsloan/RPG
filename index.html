@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Star Wars RPG</title>
+</head>
+
+<body>
+
+    <div id="startScreen" class="container-fluid logo">
+        <img class="img-fluid" src="./assets/images/logo.png" />
+        <br>
+        <br>
+        <h1>Select your character</h1>
+        <br>
+        <div id="game" class="ctr container card-deck">
+        </div>
+    </div>
+    
+    <div id="fightScreen" class="bg-trans container-fluid">
+        <div class="row">
+            <div class="col-12 ctr">
+                Enemies left:
+                <div id="defendersLeft"></div>
+            </div>
+        </div>
+        <div class="row text-center vs">
+            <div class="col-5">
+                Player:
+                <div class="container" style="width: 30%;">
+                    <div id="player"></div>
+                    <div id="playerHealth"></div>
+                </div>
+            </div>
+            <div class="col-2 vs">
+                
+                <img src="./assets/images/vs.png" width="100" />
+            </div>
+            <div class="col-5">
+                Enemy:
+                <div class="container">
+                    <div id="defender"></div>
+                    <div id="defenderHealth"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 btn">
+                <div id="message"></div>
+                <br>
+                <button type="button" name="attack" id="attackBtn" class="btn btn-dark btn-lg">ATTACK</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div id="winner">
+            <p id="winnerMsg">
+                YOU WIN!
+                <br> You defeated everyone!
+            </p>
+        </div>
+    </div>
+
+   
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+
+</html>
