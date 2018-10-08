@@ -8,7 +8,7 @@ var defenderSelected = false;
 
 
 $(window).on("load", function() {
-    console.log(document.getElementById("my_audio"));
+    document.getElementById("my_audio");
 });
 
 function Character(name, hp, ap, cp, pic) {
@@ -133,7 +133,7 @@ if (!playerSelected) {
     for (var i = 0; i < charArray.length; i++) {
         if (charArray[i].name == (this).id) {
             player = charArray[i]; 
-            playAudio(); // starts theme song
+            playAudio();
             $("body").css({
                 "background-image": "url('./assets/images/" + this.id[0] + ".jpg')"
             }); 
@@ -181,9 +181,9 @@ $(document).on("click", "#attackBtn", function () {
             $("#defenderHealth").html("");
             defenderSelected = false;
             if (isWinner()) {
-                $("#fightScreen").hide();
+                
                 $("#winnerMsg").show();
-                $("#attackBtn").html("Play Again?");
+                $("#attackBtn").html("Play Again");
                 $(document).on("click", "#attackBtn", function () { 
                     location.reload();
                 });    

@@ -13,15 +13,16 @@
 </head>
 
 <body>
-
+        <iframe src="assets/media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>  
     <div id="startScreen" class="container-fluid logo">
+            <audio id="my_audio" autoplay loop> <source src="assets/media/star-wars.mp3" type="audio/mp3"> </audio>
         <img class="img-fluid" src="./assets/images/logo.png" />
         <br>
         <br>
         <h1>Select your character</h1>
         <br>
         <div id="game" class="ctr container card-deck">
-                <audio id="my_audio" src="assets/media/star-wars.mp3" loop="loop"></audio>
+                
         </div>
     </div>
     
@@ -35,7 +36,7 @@
         <div class="row text-center vs">
             <div class="col-5">
                 Player:
-                <div class="container" style="width: 30%;">
+                <div class="container" style="width: 35%;">
                     <div id="player"></div>
                     <div id="playerHealth"></div>
                 </div>
@@ -62,7 +63,7 @@
         </div>
     </div>
     <div class="container-fluid ">
-        <div id="winner">
+        <div id="message">
             <p id="winnerMsg">
                 YOU WIN!
                 <br> You defeated everyone!
@@ -71,8 +72,6 @@
     </div>
 
    
-
-
 
 </body>
 
